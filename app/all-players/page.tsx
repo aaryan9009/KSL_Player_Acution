@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -6,7 +5,6 @@ import Link from 'next/link';
 
 export default function AllPlayers() {
   const [players, setPlayers] = useState([]);
-  // State to track which player is clicked
   const [selectedPlayer, setSelectedPlayer] = useState<any>(null);
 
   useEffect(() => {
@@ -43,7 +41,7 @@ export default function AllPlayers() {
           {players.map((p: any) => (
             <div 
               key={p._id} 
-              onClick={() => setSelectedPlayer(p)} // Set player on click
+              onClick={() => setSelectedPlayer(p)}
               className={`relative bg-[#0a0a0c] border p-4 rounded-2xl flex items-center gap-4 transition-all shadow-lg cursor-pointer hover:scale-[1.02] active:scale-95 ${
                 p.status === 'sold' ? 'border-emerald-500/20' : 'border-slate-800'
               }`}
@@ -76,48 +74,56 @@ export default function AllPlayers() {
         </div>
       </div>
 
-      {/* --- BIG PLAYER FOCUS MODAL --- */}
+      {/* --- COMPACT PLAYER FOCUS MODAL (SIZE UPDATED) --- */}
       {selectedPlayer && (
         <div 
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90 backdrop-blur-md transition-all"
-          onClick={() => setSelectedPlayer(null)} // Click background to close
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm transition-all"
+          onClick={() => setSelectedPlayer(null)}
         >
           <div 
-            className="relative bg-[#0a0a0c] border-2 border-slate-800 w-full max-w-lg rounded-[2rem] overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.5)]"
-            onClick={(e) => e.stopPropagation()} // Prevent close when clicking card
+            className="relative bg-[#0a0a0c] border border-slate-800 w-full max-w-md rounded-[2rem] overflow-hidden shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
             <button 
               onClick={() => setSelectedPlayer(null)}
-              className="absolute top-6 right-6 z-10 text-slate-500 hover:text-white"
+              className="absolute top-4 right-4 z-10 text-slate-500 hover:text-white transition-colors"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
 
-            {/* Big Photo Container */}
-            <div className="relative h-80 w-full">
+            {/* Compact Photo Section (h-56) */}
+            <div className="relative h-60 w-full bg-slate-900">
               <img 
                 src={selectedPlayer.photo || '/placeholder.png'} 
-                className={`w-full h-full object-cover ${selectedPlayer.status === 'unsold' ? 'grayscale' : ''}`}
+                className={`w-full h-full object-cover ${selectedPlayer.status === 'unsold' ? 'grayscale opacity-50' : ''}`}
                 alt={selectedPlayer.name}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0c] via-transparent" />
               
-              {selectedPlayer.isIcon && (
-                <div className="absolute top-6 left-6 bg-yellow-500 text-black font-black px-4 py-1 rounded-full italic tracking-tighter">
-                  ICON PLAYER
+              <div className="absolute top-6 left-6 flex gap-2">
+                {selectedPlayer.isIcon && (
+                  <div className="bg-yellow-500 text-black font-black px-3 py-0.5 rounded-full italic tracking-tighter text-[10px]">
+                    ICON
+                  </div>
+                )}
+                <div className={`font-black px-3 py-0.5 rounded-full italic tracking-tighter text-[10px] uppercase ${
+                    selectedPlayer.status === 'sold' ? 'bg-emerald-500 text-white' : 
+                    selectedPlayer.status === 'unsold' ? 'bg-red-600 text-white' : 'bg-slate-700 text-white'
+                }`}>
+                  {selectedPlayer.status}
                 </div>
-              )}
+              </div>
             </div>
 
-            {/* Details section */}
-            <div className="p-8 -mt-12 relative">
-              <p className="text-blue-500 font-bold tracking-[0.4em] text-xs uppercase mb-2">
+            {/* Details Section */}
+            <div className="p-6 -mt-8 relative">
+              <p className="text-blue-500 font-bold tracking-[0.3em] text-[10px] uppercase mb-1">
                 {selectedPlayer.playerType}
               </p>
-              <h2 className="text-5xl font-black italic uppercase tracking-tighter leading-none mb-6">
+              <h2 className="text-3xl font-black italic uppercase tracking-tighter leading-none mb-6">
                 {selectedPlayer.name}
               </h2>
 
@@ -147,6 +153,12 @@ export default function AllPlayers() {
                    <span className="text-white font-black uppercase italic">{selectedPlayer.soldTo}</span>
                 </div>
               )}
+
+              <div className="mt-6 text-center border-t border-slate-900 pt-4">
+                <p className="text-slate-700 text-[8px] font-black uppercase tracking-[0.3em]">
+                    KSL Season 3 Master Roster
+                </p>
+              </div>
             </div>
           </div>
         </div>

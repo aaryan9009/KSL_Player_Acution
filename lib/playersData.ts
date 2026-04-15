@@ -511,5 +511,13 @@ export const INITIAL_PLAYERS = [
     photo: "/players/Sagar_Patil.jpg",
     isIcon: false,
     status: "available"
+  },
+  {
+    _id: "65",
+    name: "Rushikesh Mane",
+    playerType: "Defender",
+    photo: "/players/Rushikesh_Mane.jpeg",
+    isIcon: false,
+    status: "available"
   }
 ];
