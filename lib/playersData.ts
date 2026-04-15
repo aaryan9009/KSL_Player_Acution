@@ -42,9 +42,9 @@ export const INITIAL_PLAYERS = [
   },
   {
     _id: "6",
-    name: "Yash Jadhav",
-    playerType: "Defender",
-    photo: "/players/Yash_Jadhav.jpg",
+    name: "Babasaheb Koli",
+    playerType: "Raider",
+    photo: "/players/Babaso_Koli.jpg",
     isIcon: true,
     status: "available"
   },
@@ -298,9 +298,9 @@ export const INITIAL_PLAYERS = [
   },
   {
     _id: "38",
-    name: "Babasaheb Koli",
-    playerType: "Raider",
-    photo: "/players/Babaso_Koli.jpg",
+    name: "Yash Jadhav",
+    playerType: "Defender",
+    photo: "/players/Yash_Jadhav.jpg",
     isIcon: false,
     status: "available"
   },
