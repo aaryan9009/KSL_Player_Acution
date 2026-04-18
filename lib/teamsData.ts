@@ -24,7 +24,7 @@ export const INITIAL_TEAMS = [
   },
   {
     _id: "t4",
-    name: "रौद्रशंभू योद्धास",
+    name: "शिवमुद्रा वॉरियर्स",
     owner: "LAKHAN PATIL",
     logo: "/logos/logo.png!bw800",
     pointsUsed: 0
