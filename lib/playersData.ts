@@ -42,9 +42,9 @@ export const INITIAL_PLAYERS = [
   },
   {
     _id: "6",
-    name: "Yash Jadhav",
-    playerType: "Defender",
-    photo: "/players/Yash_Jadhav.jpg",
+    name: "Babasaheb Koli",
+    playerType: "Raider",
+    photo: "/players/Babaso_Koli.jpg",
     isIcon: true,
     status: "available"
   },
@@ -53,14 +53,6 @@ export const INITIAL_PLAYERS = [
     name: "Harshwardhan Patil",
     playerType: "Raider",
     photo: "/players/Shubham_Patil.jpg",
-    isIcon: false,
-    status: "available"
-  },
-  {
-    _id: "8",
-    name: "Aditya Patil",
-    playerType: "Defender",
-    photo: "/players/Aditya_M_Patil.jpg",
     isIcon: false,
     status: "available"
   },
@@ -91,8 +83,8 @@ export const INITIAL_PLAYERS = [
   {
     _id: "12",
     name: "Yash Jadhav",
-    playerType: "All Rounder",
-    photo: "/players/Yash_D_Jadhav.jpg",
+    playerType: "Defender",
+    photo: "/players/Yash_Jadhav.jpg",
     isIcon: false,
     status: "available"
   },
@@ -104,19 +96,20 @@ export const INITIAL_PLAYERS = [
     isIcon: false,
     status: "available"
   },
-  {
-    _id: "14",
-    name: "Pruthviraj Patil",
-    playerType: "All Rounder",
-    photo: "/players/Pruthviraj_patil.jpg",
-    isIcon: false,
-    status: "available"
-  },
+  
   {
     _id: "15",
     name: "Aavishkar Patil",
     playerType: "All Rounder",
     photo: "/players/Avishkar_Patil.jpg",
+    isIcon: false,
+    status: "available"
+  },
+  {
+    _id: "68",
+    name: "Rohan Jadhav",
+    playerType: "Raider",
+    photo: "/players/Rohan_Jadhav.jpeg",
     isIcon: false,
     status: "available"
   },
@@ -137,26 +130,26 @@ export const INITIAL_PLAYERS = [
     status: "available"
   },
   {
-    _id: "18",
-    name: "Omkar Patil",
+    _id: "51",
+    name: "Rajvardhan Patil",
     playerType: "All Rounder",
-    photo: "/players/Omkar_Patil.jpg",
+    photo: "/players/Rajvardhan_Patil.jpg",
+    isIcon: false,
+    status: "available"
+  },
+    {
+    _id: "56",
+    name: "Aniruddh More",
+    playerType: "Defender",
+    photo: "/players/Aniruddh_more.jpg",
     isIcon: false,
     status: "available"
   },
   {
-    _id: "19",
-    name: "Atharv Patil",
-    playerType: "All Rounder",
-    photo: "/players/Atharv_Patil.jpg",
-    isIcon: false,
-    status: "available"
-  },
-  {
-    _id: "20",
-    name: "Vikrant Patil",
-    playerType: "All Rounder",
-    photo: "/players/Vikrant_Patil.jpg",
+    _id: "52",
+    name: "Shreyash Patil",
+    playerType: "Defender",
+    photo: "/players/Shreyash_Patil.jpg",
     isIcon: false,
     status: "available"
   },
@@ -169,14 +162,6 @@ export const INITIAL_PLAYERS = [
     status: "available"
   },
   {
-    _id: "22",
-    name: "Sanchit Kharade",
-    playerType: "All Rounder",
-    photo: "/players/Sanchit_kharade.jpg",
-    isIcon: false,
-    status: "available"
-  },
-  {
     _id: "23",
     name: "Arjun Patil",
     playerType: "Raider",
@@ -184,6 +169,7 @@ export const INITIAL_PLAYERS = [
     isIcon: false,
     status: "available"
   },
+  
   {
     _id: "24",
     name: "Shubham Sawant",
@@ -241,6 +227,14 @@ export const INITIAL_PLAYERS = [
     status: "available"
   },
   {
+    _id: "19",
+    name: "Atharv Patil",
+    playerType: "All Rounder",
+    photo: "/players/Atharv_Patil.jpg",
+    isIcon: false,
+    status: "available"
+  },
+  {
     _id: "31",
     name: "Vishal Koli",
     playerType: "Raider",
@@ -248,14 +242,7 @@ export const INITIAL_PLAYERS = [
     isIcon: false,
     status: "available"
   },
-  {
-    _id: "32",
-    name: "Rakesh Koli",
-    playerType: "Raider",
-    photo: "/players/Rakesh_Koli.jpeg",
-    isIcon: false,
-    status: "available"
-  },
+  
   {
     _id: "33",
     name: "Akash Patil",
@@ -273,18 +260,10 @@ export const INITIAL_PLAYERS = [
     status: "available"
   },
   {
-    _id: "35",
-    name: "Pranav Kharade",
-    playerType: "Raider",
-    photo: "/players/Pranav_Kharade.jpg",
-    isIcon: false,
-    status: "available"
-  },
-  {
-    _id: "36",
-    name: "Varad Kharade",
+    _id: "8",
+    name: "Aditya Patil",
     playerType: "Defender",
-    photo: "/players/Varad_Kharade.jpg",
+    photo: "/players/Aditya_M_Patil.jpg",
     isIcon: false,
     status: "available"
   },
@@ -298,9 +277,9 @@ export const INITIAL_PLAYERS = [
   },
   {
     _id: "38",
-    name: "Babasaheb Koli",
-    playerType: "Raider",
-    photo: "/players/Babaso_Koli.jpg",
+    name: "Yash Jadhav",
+    playerType: "All Rounder",
+    photo: "/players/Yash_D_Jadhav.jpg",
     isIcon: false,
     status: "available"
   },
@@ -312,14 +291,7 @@ export const INITIAL_PLAYERS = [
     isIcon: false,
     status: "available"
   },
-  {
-    _id: "40",
-    name: "Kshitij Jamdade",
-    playerType: "All Rounder",
-    photo: "/players/Kshitij_Jamdade.jpg",
-    isIcon: false,
-    status: "available"
-  },
+  
   {
     _id: "41",
     name: "Pruthviraj Magdum",
@@ -353,6 +325,14 @@ export const INITIAL_PLAYERS = [
     status: "available"
   },
   {
+    _id: "47",
+    name: "Pruthviraj Patil",
+    playerType: "Defender",
+    photo: "/players/Prithviraj_P_Patil.jpg",
+    isIcon: false,
+    status: "available"
+  },
+  {
     _id: "45",
     name: "Vishavjit Patil",
     playerType: "Defender",
@@ -369,18 +349,18 @@ export const INITIAL_PLAYERS = [
     status: "available"
   },
   {
-    _id: "47",
-    name: "Prithviraj Patil",
-    playerType: "Defender",
-    photo: "/players/Prithviraj_P_Patil.jpg",
-    isIcon: false,
-    status: "available"
-  },
-  {
     _id: "48",
     name: "Aryan Patil",
     playerType: "Raider",
     photo: "/players/Aryan_Patil.jpg",
+    isIcon: false,
+    status: "available"
+  },
+  {
+    _id: "22",
+    name: "Sanchit Kharade",
+    playerType: "All Rounder",
+    photo: "/players/Sanchit_kharade.jpg",
     isIcon: false,
     status: "available"
   },
@@ -400,22 +380,7 @@ export const INITIAL_PLAYERS = [
     isIcon: false,
     status: "available"
   },
-  {
-    _id: "51",
-    name: "Rajvardhan Patil",
-    playerType: "All Rounder",
-    photo: "/players/Rajvardhan_Patil.jpg",
-    isIcon: false,
-    status: "available"
-  },
-  {
-    _id: "52",
-    name: "Shreyash Patil",
-    playerType: "Defender",
-    photo: "/players/Shreyash_Patil.jpg",
-    isIcon: false,
-    status: "available"
-  },
+  
   {
     _id: "53",
     name: "Sankat Kamble",
@@ -424,14 +389,7 @@ export const INITIAL_PLAYERS = [
     isIcon: false,
     status: "available"
   },
-  {
-    _id: "54",
-    name: "Sagar More",
-    playerType: "Defender",
-    photo: "/players/Sagar_More.jpg",
-    isIcon: false,
-    status: "available"
-  },
+  
   {
     _id: "55",
     name: "Ganesh Patil",
@@ -440,14 +398,7 @@ export const INITIAL_PLAYERS = [
     isIcon: false,
     status: "available"
   },
-  {
-    _id: "56",
-    name: "Aniruddh More",
-    playerType: "Defender",
-    photo: "/players/Aniruddh_more.jpg",
-    isIcon: false,
-    status: "available"
-  },
+
   {
     _id: "57",
     name: "Yogesh Patil",
@@ -496,14 +447,7 @@ export const INITIAL_PLAYERS = [
     isIcon: false,
     status: "available"
   },
-  {
-    _id: "63",
-    name: "Om Patil",
-    playerType: "Defender",
-    photo: "/players/Om_Patil.jpg",
-    isIcon: false,
-    status: "available"
-  },
+  
   {
     _id: "64",
     name: "Sagar Patil",
@@ -517,6 +461,86 @@ export const INITIAL_PLAYERS = [
     name: "Rushikesh Mane",
     playerType: "Defender",
     photo: "/players/Rushikesh_Mane.jpeg",
+    isIcon: false,
+    status: "available"
+  },
+  {
+    _id: "66",
+    name: "Sudham Patil",
+    playerType: "Defender",
+    photo: "/players/Sudham_Patil.jpg",
+    isIcon: false,
+    status: "available"
+  },
+  {
+    _id: "67",
+    name: "Ruturaj Kamble",
+    playerType: "All Rounder",
+    photo: "/players/Ruturaj_Kamble.jpg",
+    isIcon: false,
+    status: "available"
+  },
+  {
+    _id: "14",
+    name: "Pruthviraj Patil",
+    playerType: "All Rounder",
+    photo: "/players/Pruthviraj_patil.jpg",
+    isIcon: false,
+    status: "available"
+  },
+{
+    _id: "18",
+    name: "Omkar Patil",
+    playerType: "All Rounder",
+    photo: "/players/Omkar_Patil.jpg",
+    isIcon: false,
+    status: "available"
+  },
+{
+    _id: "20",
+    name: "Vikrant Patil",
+    playerType: "All Rounder",
+    photo: "/players/Vikrant_Patil.jpg",
+    isIcon: false,
+    status: "available"
+  },
+{
+    _id: "35",
+    name: "Pranav Kharade",
+    playerType: "Raider",
+    photo: "/players/Pranav_Kharade.jpg",
+    isIcon: false,
+    status: "available"
+  },
+{
+    _id: "36",
+    name: "Varad Kharade",
+    playerType: "Defender",
+    photo: "/players/Varad_Kharade.jpg",
+    isIcon: false,
+    status: "available"
+  },
+{
+    _id: "40",
+    name: "Kshitij Jamdade",
+    playerType: "All Rounder",
+    photo: "/players/Kshitij_Jamdade.jpg",
+    isIcon: false,
+    status: "available"
+  },
+{
+    _id: "54",
+    name: "Sagar More",
+    playerType: "Defender",
+    photo: "/players/Sagar_More.jpg",
+    isIcon: false,
+    status: "available"
+  },
+{
+    _id: "63",
+    name: "Om Patil",
+    playerType: "Defender",
+    photo: "/players/Om_Patil.jpg",
     isIcon: false,
     status: "available"
   }

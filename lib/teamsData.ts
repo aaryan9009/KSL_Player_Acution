@@ -3,38 +3,44 @@
 export const INITIAL_TEAMS = [
   {
     _id: "t1",
-    name: "NAVJEET PATIL",
-    logo: "/logos/lion-mascot-logo-png.webp",
+    name: "रौद्रशंभू योद्धास",
+    owner: "NAVJEET PATIL",
+    logo: "/logos/logo.png!bw800",
     pointsUsed: 0
   },
   {
     _id: "t2",
-    name: "PANKAJ PATIL",
-    logo: "/logos/lion-mascot-logo-png.webp",
+    name: "माऊली वॉरियर्स",
+    owner: "PANKAJ PATIL",
+    logo: "/logos/logo.png!bw800",
     pointsUsed: 0
   },
   {
     _id: "t3",
-    name: "ADARSH PATIL",
-    logo: "/logos/lion-mascot-logo-png.webp",
+    name: "राजमुद्रा वॉरियर्स",
+    owner: "ADARSH PATIL",
+    logo: "/logos/logo.png!bw800",
     pointsUsed: 0
   },
   {
     _id: "t4",
-    name: "LAKHAN PATIL",
-    logo: "/logos/lion-mascot-logo-png.webp",
+    name: "रौद्रशंभू योद्धास",
+    owner: "LAKHAN PATIL",
+    logo: "/logos/logo.png!bw800",
     pointsUsed: 0
   },
   {
     _id: "t5",
-    name: "ANIL CHOUGULE",
-    logo: "/logos/lion-mascot-logo-png.webp",
+    name: "स्वराज्य वॉरियर्स",
+    owner: "ANIL CHOUGULE",
+    logo: "/logos/logo.png!bw800",
     pointsUsed: 0
   },
   {
     _id: "t6",
-    name: "PRATIK PATIL",
-    logo: "/logos/lion-mascot-logo-png.webp",
+    name: "सह्याद्री फायटर्स",
+    owner: "PRATIK PATIL",
+    logo: "/logos/logo.png!bw800",
     pointsUsed: 0
   }
   
