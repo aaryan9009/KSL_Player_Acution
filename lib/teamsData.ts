@@ -39,7 +39,7 @@ export const INITIAL_TEAMS = [
   {
     _id: "t6",
     name: "सह्याद्री फायटर्स",
-    owner: "PRATIK PATIL",
+    owner: "PRUTHVIRAJ PATIL",
     logo: "/logos/logo.png!bw800",
     pointsUsed: 0
   }
