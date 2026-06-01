@@ -380,5 +380,5 @@ export default function AuctionRoom() {
 //         </div>
 //       </main>
 //     </div>
-  );
-}
+//   );
+// }
