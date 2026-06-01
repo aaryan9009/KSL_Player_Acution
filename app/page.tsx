@@ -164,15 +164,15 @@ export default function AuctionRoom() {
         </div>
 
         {/* BOTTOM TEAM DASHBOARD - Clickable */}
-        <div className="grid grid-cols-6 gap-3 w-full max-w-6xl pb-2">
+        <div className="grid grid-cols-6 gap-3 w-full max-w-6xl pb-0.5">
           {teams.map(team => (
             <Link href={`/team/${encodeURIComponent(team.name)}`} key={team._id}>
               <div className="bg-slate-900/40 border border-slate-800 p-3 rounded-2xl text-center cursor-pointer transition-all hover:border-blue-500 active:scale-95">
-                <img src={team.logo} className="w-10 h-10 mx-auto mb-1 object-contain" alt={team.name} />
-                <p className="text-[9px] font-black text-white uppercase truncate mb-1">{team.name}</p>
+                <img src={team.logo} className="w-13 h-13 mx-auto mb-1 object-contain" alt={team.name} />
+                <p className="text-[13px] font-black text-white uppercase truncate mb-1">{team.name}</p>
                 <div className="bg-black/50 rounded-lg py-1 border border-slate-800">
-                  <p className="text-lg font-mono font-bold text-emerald-400 leading-none">{100 - (team.pointsUsed || 0)}</p>
-                  <p className="text-[7px] font-bold text-slate-600 uppercase tracking-widest mt-0.5">Points</p>
+                  <p className="text-2xl font-mono font-bold text-emerald-400 leading-none">{100 - (team.pointsUsed || 0)}</p>
+                  <p className="text-[8px] font-bold text-slate-600 uppercase tracking-widest mt-0.5">Points</p>
                 </div>
               </div>
             </Link>
